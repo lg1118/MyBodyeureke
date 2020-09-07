@@ -43,7 +43,7 @@ public class UserController {
      */
     @PostMapping("/login")
     public BaseResult login(@RequestBody User user){
-//        System.out.println(user);
+        System.out.println(user);
         User b =userService.login(user);
         String token =null;
         if (b!=null){
